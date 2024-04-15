@@ -1,12 +1,8 @@
-i_list = []
-j_list = []
+import sys
+result = []
 
-for i in range(10):
-    i = int(input())
-    i_list.append(i)
+for i in range(10): 
+    n = int(input())
+    result.append(n % 42)
 
-for j in i_list:
-	j_list.append(j % 42)
-
-result = list(set(j_list))
-print(len(result))
+print(len(set(result)))
