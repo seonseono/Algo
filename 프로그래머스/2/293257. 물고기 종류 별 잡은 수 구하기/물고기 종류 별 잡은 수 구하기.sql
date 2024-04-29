@@ -1,14 +1,8 @@
 # -- 코드를 작성해주세요
-# SELECT COUNT(*) AS FISH_TYPE,
-#        n.FISH_NAME
-# FROM fish_info AS i
-#      JOIN fish_name_info AS n
-#      USING(fish_type)
-# GROUP BY n.FISH_NAME
-# ORDER BY FISH_TYPE DESC
-
-SELECT COUNT(*) AS FISH_COUNT, FISH_NAME FROM FISH_INFO FI
-JOIN FISH_NAME_INFO NI
-USING (FISH_TYPE)
+SELECT COUNT(*) AS FISH_COUNT,
+       FISH_NAME
+FROM fish_info AS i
+     JOIN fish_name_info AS n
+     USING(fish_type)
 GROUP BY FISH_NAME
 ORDER BY FISH_COUNT DESC
