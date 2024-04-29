@@ -1,3 +1,2 @@
-import statistics
 def solution(numbers):
-    return statistics.mean(numbers)
+    return sum(numbers) / len(numbers) 
